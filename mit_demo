@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.e">
+    <title>Change background colour</title>
+  </head>
+  <body>
+    <div>
+      <center>
+        <h1>This is Chaitanya Dubal</h1>
+        <p class="p">Welcome to my website</p>
+        <p class="p">Write the name of colour</p>
+        <p class="p">Select the colour for page</p>
+        <input class="t" type="text" id="text">
+        <input class="t" type="color" id="clr">
+        <input class="t" type="button" id="btn" value="change color" onclick="changecolor()">
+      </center>
+    </div>
+    <script>
+      function changecolor() {
+        let color = document.getElementById("text").value;
+        let clr = document.getElementById("clr").value;
+        document.body.style.color = color;
+        document.body.style.backgroundColor = clr;
+      }
+    </script>
+  </body>
+</html>
